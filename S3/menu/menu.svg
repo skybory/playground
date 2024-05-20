@@ -1,0 +1,26 @@
+<svg
+    width="80"
+    height="120"
+    viewBox="0 0 80 120"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+>
+    <path
+        d="M6.22501 99.5L40 41L73.775 99.5H6.22501Z"
+        fill="white"
+        stroke="black"
+    />
+    <circle cx="40" cy="40" r="39.5" fill="white" stroke="black" />
+    <path
+        d="M6.22501 99.5L40 41L73.775 99.5H6.22501Z"
+        fill="white"
+        stroke="black"
+    />
+    <path
+        d="M6.22501 99.5L40 41L73.775 99.5H6.22501Z"
+        fill="white"
+        stroke="black"
+    />
+    <circle cx="40" cy="40" r="39.5" fill="white" stroke="black" />
+    <path d="M6.22501 99.5L40 41L73.775 99.5H6.22501Z" stroke="black" />
+</svg>

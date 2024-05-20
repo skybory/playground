@@ -1,0 +1,46 @@
+폴더명 : menu
+위치 : menu/
+
+loadingBlueCircle.svg 
+https://skybory-bucket.s3.ap-northeast-2.amazonaws.com/menu/loadingBlueCircle.svg
+
+
+loadingGreenCircle.svg
+https://skybory-bucket.s3.ap-northeast-2.amazonaws.com/menu/loadingGreenCircle.svg
+
+loadingRedCircle.svg
+https://skybory-bucket.s3.ap-northeast-2.amazonaws.com/menu/loadingRedCircle.svg
+
+loadingYellowCircle.svg
+https://skybory-bucket.s3.ap-northeast-2.amazonaws.com/menu/loadingYellowCircle.svg
+
+menu.svg
+https://skybory-bucket.s3.ap-northeast-2.amazonaws.com/menu/menu.svg
+
+naver.svg 
+https://skybory-bucket.s3.ap-northeast-2.amazonaws.com/menu/naver.svg
+
+kakao.svg
+https://skybory-bucket.s3.ap-northeast-2.amazonaws.com/menu/kakao.svg
+
+toCreatorsIcon.svg 
+https://skybory-bucket.s3.ap-northeast-2.amazonaws.com/menu/toCreatorsIcon.svg
+
+toQnAIcon.svg 
+https://skybory-bucket.s3.ap-northeast-2.amazonaws.com/menu/toQnAIcon.svg
+
+폴더명 : esset
+위치 : esset/
+티켓 수령 및 유의사항.png
+https://skybory-bucket.s3.ap-northeast-2.amazonaws.com/esset/%ED%8B%B0%EC%BC%93+%EC%88%98%EB%A0%B9+%EB%B0%8F+%EC%9C%A0%EC%9D%98%EC%82%AC%ED%95%AD.png
+
+num1.png
+https://skybory-bucket.s3.ap-northeast-2.amazonaws.com/esset/num1.png
+
+num2.png
+https://skybory-bucket.s3.ap-northeast-2.amazonaws.com/esset/num2.png
+
+num3.png
+https://skybory-bucket.s3.ap-northeast-2.amazonaws.com/esset/num3.png
+
+

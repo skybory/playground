@@ -1,0 +1,259 @@
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.4)
+
+2024-05-20T03:12:48.918Z  INFO 1274 --- [seoulArt] [           main] c.skybory.seoulArt.SeoulArtApplication   : Starting SeoulArtApplication v1.1.2-SNAPSHOT using Java 17.0.11 with PID 1274 (/home/ubuntu/playground-1.1.2-SNAPSHOT.jar started by ubuntu in /home/ubuntu)
+2024-05-20T03:12:48.926Z  INFO 1274 --- [seoulArt] [           main] c.skybory.seoulArt.SeoulArtApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-20T03:12:51.945Z  INFO 1274 --- [seoulArt] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-20T03:12:52.194Z  INFO 1274 --- [seoulArt] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 222 ms. Found 5 JPA repository interfaces.
+2024-05-20T03:12:54.787Z  INFO 1274 --- [seoulArt] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (https)
+2024-05-20T03:12:54.849Z  INFO 1274 --- [seoulArt] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-20T03:12:54.849Z  INFO 1274 --- [seoulArt] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-20T03:12:55.210Z  INFO 1274 --- [seoulArt] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-20T03:12:55.213Z  INFO 1274 --- [seoulArt] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6129 ms
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2024-05-20T03:12:55.762Z  INFO 1274 --- [seoulArt] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-20T03:12:55.998Z  INFO 1274 --- [seoulArt] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-20T03:12:56.096Z  INFO 1274 --- [seoulArt] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-20T03:12:56.961Z  INFO 1274 --- [seoulArt] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-20T03:12:57.044Z  INFO 1274 --- [seoulArt] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-20T03:12:57.914Z  INFO 1274 --- [seoulArt] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@546083d6
+2024-05-20T03:12:57.920Z  INFO 1274 --- [seoulArt] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-20T03:13:01.383Z  INFO 1274 --- [seoulArt] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-20T03:13:01.537Z  INFO 1274 --- [seoulArt] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-20T03:13:05.805Z  WARN 1274 --- [seoulArt] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-20T03:13:06.855Z  INFO 1274 --- [seoulArt] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@420307f9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@630e5803, org.springframework.security.web.context.SecurityContextHolderFilter@2a59a8fe, org.springframework.security.web.header.HeaderWriterFilter@426fb1c3, org.springframework.web.filter.CorsFilter@7e822c11, org.springframework.security.web.authentication.logout.LogoutFilter@118932fe, com.skybory.seoulArt.Oauth.JwtAuthenticationFilter@5b810b54, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@653e79fc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@ebd4486, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e7f312, org.springframework.security.web.session.SessionManagementFilter@69f01f4b, org.springframework.security.web.access.ExceptionTranslationFilter@3e711e84, org.springframework.security.web.access.intercept.AuthorizationFilter@32b273c1]
+2024-05-20T03:13:08.395Z  INFO 1274 --- [seoulArt] [           main] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [/home/ubuntu/.keystore] using alias [seoulart] with trust store [null]
+2024-05-20T03:13:08.432Z  INFO 1274 --- [seoulArt] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (https) with context path ''
+2024-05-20T03:13:08.467Z  INFO 1274 --- [seoulArt] [           main] c.skybory.seoulArt.SeoulArtApplication   : Started SeoulArtApplication in 21.081 seconds (process running for 23.275)
+2024-05-20T03:13:36.937Z  INFO 1274 --- [seoulArt] [nio-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-20T03:13:36.937Z  INFO 1274 --- [seoulArt] [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-20T03:13:36.941Z  INFO 1274 --- [seoulArt] [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-05-20T03:13:37.125Z  INFO 1274 --- [seoulArt] [nio-8080-exec-2] c.s.s.Oauth.JwtAuthenticationFilter      : 필터 작동 : JWT 필요
+2024-05-20T03:13:37.133Z  INFO 1274 --- [seoulArt] [nio-8080-exec-2] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 accessToken 가져오기
+2024-05-20T03:13:37.138Z  INFO 1274 --- [seoulArt] [nio-8080-exec-2] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 refreshToken 가져오기
+2024-05-20T03:13:37.138Z  INFO 1274 --- [seoulArt] [nio-8080-exec-2] c.s.s.Oauth.JwtAuthenticationFilter      : 엑세스 토큰, 리프레시 토큰 추출 성공
+2024-05-20T03:13:37.198Z  INFO 1274 --- [seoulArt] [nio-8080-exec-2] c.s.s.Oauth.JwtAuthenticationFilter      : accessToken 이 유효합니다.
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.creator_description,
+        u1_0.creator_image,
+        u1_0.department,
+        u1_0.email,
+        u1_0.phone_number,
+        u1_0.profile_image,
+        u1_0.role,
+        u1_0.username,
+        u1_0.verify_code 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        t1_0.user_id,
+        t1_0.ticket_idx,
+        p1_0.play_id,
+        p1_0.detail,
+        p1_0.image,
+        p1_0.title,
+        s1_0.seat_idx,
+        s1_0.play_idx,
+        s1_0.seat_status 
+    from
+        ticket t1_0 
+    left join
+        play p1_0 
+            on p1_0.play_id=t1_0.play_play_id 
+    left join
+        seat s1_0 
+            on s1_0.seat_idx=t1_0.seat_seat_idx 
+    where
+        t1_0.user_id=?
+2024-05-20T03:13:37.421Z  INFO 1274 --- [seoulArt] [nio-8080-exec-2] c.s.s.d.user.service.UserServiceImpl     : UserDTO returned from loadUserByUserId: com.skybory.seoulArt.domain.user.dto.UserDTO@6cb716b8
+2024-05-20T03:13:37.506Z  INFO 1274 --- [seoulArt] [nio-8080-exec-2] c.s.s.Oauth.controller.OAuthController   : 쿠키에서 refreshToken 추출 : eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjMsImlhdCI6MTcxNjE3Mjg2NSwiZXhwIjoxNzE4NzY0ODY1fQ.hV4YglF8q0NYoR2nQa_Ir5cUehdb8Dmgr00qNssSCj0
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.creator_description,
+        u1_0.creator_image,
+        u1_0.department,
+        u1_0.email,
+        u1_0.phone_number,
+        u1_0.profile_image,
+        u1_0.role,
+        u1_0.username,
+        u1_0.verify_code 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        t1_0.user_id,
+        t1_0.ticket_idx,
+        p1_0.play_id,
+        p1_0.detail,
+        p1_0.image,
+        p1_0.title,
+        s1_0.seat_idx,
+        s1_0.play_idx,
+        s1_0.seat_status 
+    from
+        ticket t1_0 
+    left join
+        play p1_0 
+            on p1_0.play_id=t1_0.play_play_id 
+    left join
+        seat s1_0 
+            on s1_0.seat_idx=t1_0.seat_seat_idx 
+    where
+        t1_0.user_id=?
+2024-05-20T03:13:37.536Z  INFO 1274 --- [seoulArt] [nio-8080-exec-2] c.s.s.d.user.service.UserServiceImpl     : UserDTO returned from loadUserByUserId: com.skybory.seoulArt.domain.user.dto.UserDTO@571bd26f
+2024-05-20T03:13:37.647Z  INFO 1274 --- [seoulArt] [nio-8080-exec-2] c.s.s.Oauth.controller.OAuthController   : 새로운 accessToken : eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjMsImlhdCI6MTcxNjE3NDgxNywiZXhwIjoxNzE2MTc4NDE3fQ.Y2Lm6hNvnWQkF520ah-LHFEu1ZXdUUPRrqKatBXJnBg
+2024-05-20T03:13:37.647Z  INFO 1274 --- [seoulArt] [nio-8080-exec-2] c.s.s.Oauth.controller.OAuthController   : 새로운 refreshToken : eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjMsImlhdCI6MTcxNjE3NDgxNywiZXhwIjoxNzE4NzY2ODE3fQ.ajpFbAYsm-BofrKCULt1_zEqCj2wzNFhLYm-5UVa9Xg
+2024-05-20T03:13:45.403Z  INFO 1274 --- [seoulArt] [nio-8080-exec-4] c.s.s.Oauth.JwtAuthenticationFilter      : 필터 작동 : JWT 필요
+2024-05-20T03:13:45.403Z  INFO 1274 --- [seoulArt] [nio-8080-exec-4] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 accessToken 가져오기
+2024-05-20T03:13:45.404Z  INFO 1274 --- [seoulArt] [nio-8080-exec-4] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 refreshToken 가져오기
+2024-05-20T03:13:45.404Z  INFO 1274 --- [seoulArt] [nio-8080-exec-4] c.s.s.Oauth.JwtAuthenticationFilter      : 엑세스 토큰, 리프레시 토큰 추출 성공
+2024-05-20T03:13:45.410Z  INFO 1274 --- [seoulArt] [nio-8080-exec-4] c.s.s.Oauth.JwtAuthenticationFilter      : accessToken 이 유효합니다.
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.creator_description,
+        u1_0.creator_image,
+        u1_0.department,
+        u1_0.email,
+        u1_0.phone_number,
+        u1_0.profile_image,
+        u1_0.role,
+        u1_0.username,
+        u1_0.verify_code 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        t1_0.user_id,
+        t1_0.ticket_idx,
+        p1_0.play_id,
+        p1_0.detail,
+        p1_0.image,
+        p1_0.title,
+        s1_0.seat_idx,
+        s1_0.play_idx,
+        s1_0.seat_status 
+    from
+        ticket t1_0 
+    left join
+        play p1_0 
+            on p1_0.play_id=t1_0.play_play_id 
+    left join
+        seat s1_0 
+            on s1_0.seat_idx=t1_0.seat_seat_idx 
+    where
+        t1_0.user_id=?
+2024-05-20T03:13:45.435Z  INFO 1274 --- [seoulArt] [nio-8080-exec-4] c.s.s.d.user.service.UserServiceImpl     : UserDTO returned from loadUserByUserId: com.skybory.seoulArt.domain.user.dto.UserDTO@7ef29866
+2024-05-20T03:13:45.446Z  INFO 1274 --- [seoulArt] [nio-8080-exec-4] c.s.s.Oauth.controller.OAuthController   : 로그아웃 메서드 실행
+2024-05-20T03:13:45.446Z  INFO 1274 --- [seoulArt] [nio-8080-exec-4] c.s.s.Oauth.controller.OAuthController   : 로그아웃 메서드 실행
+2024-05-20T03:13:47.525Z  INFO 1274 --- [seoulArt] [nio-8080-exec-6] c.s.s.Oauth.JwtAuthenticationFilter      : 필터 작동 : JWT 필요
+2024-05-20T03:13:47.526Z  INFO 1274 --- [seoulArt] [nio-8080-exec-6] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 accessToken 가져오기
+2024-05-20T03:13:47.528Z  INFO 1274 --- [seoulArt] [nio-8080-exec-6] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 refreshToken 가져오기
+2024-05-20T03:13:47.528Z  INFO 1274 --- [seoulArt] [nio-8080-exec-6] c.s.s.Oauth.JwtAuthenticationFilter      : JWT AccessToken or JWT RefreshToken 이 null입니다
+"https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=" + clientId + "&redirect_uri=" + redirectUri
+loginURL : https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=506825a69a9d9a83db0f7f1f8aaffe7d&redirect_uri=https://localhost:5173/oauth/callback/kakao
+2024-05-20T04:03:20.723Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : 필터 작동 : JWT 필요
+2024-05-20T04:03:20.723Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 accessToken 가져오기
+2024-05-20T04:03:20.723Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 refreshToken 가져오기
+2024-05-20T04:03:20.723Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : JWT AccessToken or JWT RefreshToken 이 null입니다
+2024-05-20T04:03:20.734Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.controller.OAuthController   : 쿠키에서 refreshToken 추출 : null
+2024-05-20T04:03:20.779Z  INFO 1274 --- [seoulArt] [nio-8080-exec-3] c.s.s.Oauth.JwtAuthenticationFilter      : 필터 작동 : JWT 필요
+2024-05-20T04:03:20.779Z  INFO 1274 --- [seoulArt] [nio-8080-exec-3] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 accessToken 가져오기
+2024-05-20T04:03:20.781Z  INFO 1274 --- [seoulArt] [nio-8080-exec-3] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 refreshToken 가져오기
+2024-05-20T04:03:20.782Z  INFO 1274 --- [seoulArt] [nio-8080-exec-3] c.s.s.Oauth.JwtAuthenticationFilter      : JWT AccessToken or JWT RefreshToken 이 null입니다
+2024-05-20T04:03:20.783Z  INFO 1274 --- [seoulArt] [nio-8080-exec-3] c.s.s.Oauth.controller.OAuthController   : 로그아웃 메서드 실행
+2024-05-20T04:03:20.785Z  INFO 1274 --- [seoulArt] [nio-8080-exec-3] c.s.s.Oauth.controller.OAuthController   : 로그아웃 메서드 실행
+2024-05-20T04:43:29.964Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : 필터 작동 : JWT 필요
+2024-05-20T04:43:29.964Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 accessToken 가져오기
+2024-05-20T04:43:29.964Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 refreshToken 가져오기
+2024-05-20T04:43:29.964Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : JWT AccessToken or JWT RefreshToken 이 null입니다
+"https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=" + clientId + "&redirect_uri=" + redirectUri
+loginURL : https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=506825a69a9d9a83db0f7f1f8aaffe7d&redirect_uri=https://localhost:5173/oauth/callback/kakao
+2024-05-20T04:43:30.576Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : 필터 작동 : JWT 필요
+2024-05-20T04:43:30.576Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 accessToken 가져오기
+2024-05-20T04:43:30.576Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 refreshToken 가져오기
+2024-05-20T04:43:30.576Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : JWT AccessToken or JWT RefreshToken 이 null입니다
+2024-05-20T04:44:25.463Z  INFO 1274 --- [seoulArt] [nio-8080-exec-5] c.s.s.Oauth.JwtAuthenticationFilter      : 필터 작동 : JWT 필요
+2024-05-20T04:44:25.464Z  INFO 1274 --- [seoulArt] [nio-8080-exec-5] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 accessToken 가져오기
+2024-05-20T04:44:25.464Z  INFO 1274 --- [seoulArt] [nio-8080-exec-5] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 refreshToken 가져오기
+2024-05-20T04:44:25.466Z  INFO 1274 --- [seoulArt] [nio-8080-exec-5] c.s.s.Oauth.JwtAuthenticationFilter      : JWT AccessToken or JWT RefreshToken 이 null입니다
+"https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=" + clientId + "&redirect_uri=" + redirectUri
+loginURL : https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=506825a69a9d9a83db0f7f1f8aaffe7d&redirect_uri=https://localhost:5173/oauth/callback/kakao
+2024-05-20T04:44:25.999Z  INFO 1274 --- [seoulArt] [nio-8080-exec-5] c.s.s.Oauth.JwtAuthenticationFilter      : 필터 작동 : JWT 필요
+2024-05-20T04:44:25.999Z  INFO 1274 --- [seoulArt] [nio-8080-exec-5] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 accessToken 가져오기
+2024-05-20T04:44:25.999Z  INFO 1274 --- [seoulArt] [nio-8080-exec-5] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 refreshToken 가져오기
+2024-05-20T04:44:25.999Z  INFO 1274 --- [seoulArt] [nio-8080-exec-5] c.s.s.Oauth.JwtAuthenticationFilter      : JWT AccessToken or JWT RefreshToken 이 null입니다
+2024-05-20T04:45:11.945Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : 필터 작동 : JWT 필요
+2024-05-20T04:45:11.945Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 accessToken 가져오기
+2024-05-20T04:45:11.945Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 refreshToken 가져오기
+2024-05-20T04:45:11.945Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : JWT AccessToken or JWT RefreshToken 이 null입니다
+"https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=" + clientId + "&redirect_uri=" + redirectUri
+loginURL : https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=506825a69a9d9a83db0f7f1f8aaffe7d&redirect_uri=https://localhost:5173/oauth/callback/kakao
+2024-05-20T04:45:12.565Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : 필터 작동 : JWT 필요
+2024-05-20T04:45:12.566Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 accessToken 가져오기
+2024-05-20T04:45:12.566Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 refreshToken 가져오기
+2024-05-20T04:45:12.566Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : JWT AccessToken or JWT RefreshToken 이 null입니다
+2024-05-20T04:47:33.553Z  INFO 1274 --- [seoulArt] [nio-8080-exec-6] c.s.s.Oauth.JwtAuthenticationFilter      : 필터 작동 : JWT 필요
+2024-05-20T04:47:33.554Z  INFO 1274 --- [seoulArt] [nio-8080-exec-6] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 accessToken 가져오기
+2024-05-20T04:47:33.554Z  INFO 1274 --- [seoulArt] [nio-8080-exec-6] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 refreshToken 가져오기
+2024-05-20T04:47:33.554Z  INFO 1274 --- [seoulArt] [nio-8080-exec-6] c.s.s.Oauth.JwtAuthenticationFilter      : JWT AccessToken or JWT RefreshToken 이 null입니다
+2024-05-20T04:47:37.954Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : 필터 작동 : JWT 필요
+2024-05-20T04:47:37.955Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 accessToken 가져오기
+2024-05-20T04:47:37.957Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 refreshToken 가져오기
+2024-05-20T04:47:37.957Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : JWT AccessToken or JWT RefreshToken 이 null입니다
+"https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=" + clientId + "&redirect_uri=" + redirectUri
+loginURL : https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=506825a69a9d9a83db0f7f1f8aaffe7d&redirect_uri=https://localhost:5173/oauth/callback/kakao
+2024-05-20T04:47:38.507Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : 필터 작동 : JWT 필요
+2024-05-20T04:47:38.508Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 accessToken 가져오기
+2024-05-20T04:47:38.509Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 refreshToken 가져오기
+2024-05-20T04:47:38.509Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : JWT AccessToken or JWT RefreshToken 이 null입니다
+2024-05-20T04:48:21.781Z  INFO 1274 --- [seoulArt] [nio-8080-exec-5] c.s.s.Oauth.JwtAuthenticationFilter      : 필터 작동 : JWT 필요
+2024-05-20T04:48:21.781Z  INFO 1274 --- [seoulArt] [nio-8080-exec-5] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 accessToken 가져오기
+2024-05-20T04:48:21.781Z  INFO 1274 --- [seoulArt] [nio-8080-exec-5] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 refreshToken 가져오기
+2024-05-20T04:48:21.782Z  INFO 1274 --- [seoulArt] [nio-8080-exec-5] c.s.s.Oauth.JwtAuthenticationFilter      : JWT AccessToken or JWT RefreshToken 이 null입니다
+2024-05-20T04:48:22.931Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : 필터 작동 : JWT 필요
+2024-05-20T04:48:22.931Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 accessToken 가져오기
+2024-05-20T04:48:22.931Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 refreshToken 가져오기
+2024-05-20T04:48:22.931Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : JWT AccessToken or JWT RefreshToken 이 null입니다
+"https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=" + clientId + "&redirect_uri=" + redirectUri
+loginURL : https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=506825a69a9d9a83db0f7f1f8aaffe7d&redirect_uri=https://localhost:5173/oauth/callback/kakao
+2024-05-20T04:48:23.524Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : 필터 작동 : JWT 필요
+2024-05-20T04:48:23.525Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 accessToken 가져오기
+2024-05-20T04:48:23.525Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 refreshToken 가져오기
+2024-05-20T04:48:23.525Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : JWT AccessToken or JWT RefreshToken 이 null입니다
+2024-05-20T04:50:05.156Z  INFO 1274 --- [seoulArt] [nio-8080-exec-6] c.s.s.Oauth.JwtAuthenticationFilter      : 필터 작동 : JWT 필요
+2024-05-20T04:50:05.156Z  INFO 1274 --- [seoulArt] [nio-8080-exec-6] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 accessToken 가져오기
+2024-05-20T04:50:05.157Z  INFO 1274 --- [seoulArt] [nio-8080-exec-6] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 refreshToken 가져오기
+2024-05-20T04:50:05.157Z  INFO 1274 --- [seoulArt] [nio-8080-exec-6] c.s.s.Oauth.JwtAuthenticationFilter      : JWT AccessToken or JWT RefreshToken 이 null입니다
+2024-05-20T04:50:18.690Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : 필터 작동 : JWT 필요
+2024-05-20T04:50:18.690Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 accessToken 가져오기
+2024-05-20T04:50:18.690Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 refreshToken 가져오기
+2024-05-20T04:50:18.690Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : JWT AccessToken or JWT RefreshToken 이 null입니다
+2024-05-20T04:50:24.002Z  INFO 1274 --- [seoulArt] [nio-8080-exec-6] c.s.s.Oauth.JwtAuthenticationFilter      : 필터 작동 : JWT 필요
+2024-05-20T04:50:24.003Z  INFO 1274 --- [seoulArt] [nio-8080-exec-6] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 accessToken 가져오기
+2024-05-20T04:50:24.003Z  INFO 1274 --- [seoulArt] [nio-8080-exec-6] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 refreshToken 가져오기
+2024-05-20T04:50:24.003Z  INFO 1274 --- [seoulArt] [nio-8080-exec-6] c.s.s.Oauth.JwtAuthenticationFilter      : JWT AccessToken or JWT RefreshToken 이 null입니다
+2024-05-20T04:51:36.746Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : 필터 작동 : JWT 필요
+2024-05-20T04:51:36.746Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 accessToken 가져오기
+2024-05-20T04:51:36.747Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : 쿠키에서 refreshToken 가져오기
+2024-05-20T04:51:36.747Z  INFO 1274 --- [seoulArt] [nio-8080-exec-1] c.s.s.Oauth.JwtAuthenticationFilter      : JWT AccessToken or JWT RefreshToken 이 null입니다
+"https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=" + clientId + "&redirect_uri=" + redirectUri
+loginURL : https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=506825a69a9d9a83db0f7f1f8aaffe7d&redirect_uri=https://localhost:5173/oauth/callback/kakao
